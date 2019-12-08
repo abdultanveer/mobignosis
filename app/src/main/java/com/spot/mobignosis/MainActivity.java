@@ -16,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleClick(View view) {
-        Toast.makeText(this, "mobignosis", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "mobignosis", Toast.LENGTH_SHORT).show();
         Intent homeIntent = new Intent(MainActivity.this,HomeActivity.class);
+        homeIntent.putExtra("myname","abdul");
         startActivity(homeIntent);
     }
 }
